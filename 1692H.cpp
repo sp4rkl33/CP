@@ -54,8 +54,7 @@ void solve(){
 	for (pair<int, vector<int>> it:mp){
 		int tmpw=1, a=it.first, l=it.second[0], r=l;
 		for (int i=1; i<it.second.size(); i++){
-			int gap=it.second[i]-it.second[i-1]-1;
-			tmpw-=gap; tmpw++;
+			tmpw+=2-it.second[i]+it.second[i-1];
 			r=it.second[i];
 			if (tmpw > fw) {
 				fa=a;
