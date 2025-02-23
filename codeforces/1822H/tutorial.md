@@ -13,8 +13,8 @@ Tutorial:
   - While traversing we store the distances from each nodes root, A, B into three different arrays.
   - Finally just calculate the ans by try to shift the root through all node and from current shifted node to farthest node. Because we had stored all the information earlier we can managed to calculate the answer in O(1).
 
-        **For example if we shift root to node u:**
-        **ans = max(ans, max(disA[u], disB[u]) * k - disR[u] * c)**
+        For example if we shift root to node u:
+        ans = max(ans, max(disA[u], disB[u]) * k - disR[u] * c)
 
 Time complexity: O(n)
 Space complexity: O(n)
