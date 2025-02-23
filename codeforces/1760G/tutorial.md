@@ -1,4 +1,5 @@
-Problem: https://codeforces.com/contest/1760/problem/G \n
+Problem: https://codeforces.com/contest/1760/problem/G
+
 Tag: dfs, graph, 1700*
 
 Tutorial:
