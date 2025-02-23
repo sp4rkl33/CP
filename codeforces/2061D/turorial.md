@@ -9,5 +9,5 @@ Tutorial:
 ** Special case ** 
   - After separate all numbers in b array we have to check if there any number left in a to output the correct answer.
 
-  - Time complexity: O(mlog(n + m))
-  - Space complexity: O(n + m)
+Time complexity: O(mlog(n + m))
+Space complexity: O(n + m)
