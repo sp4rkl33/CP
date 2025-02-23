@@ -19,5 +19,5 @@ Prove:
 
   - Then the answer will be ! i k (which k is the minimum p[k] of all the "p[k]s" in the vector).
 
-Time complexity: O(n).
-Space complexity: O(n).
+  Time complexity: O(n).
+  Space complexity: O(n).
