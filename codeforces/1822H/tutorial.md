@@ -10,7 +10,10 @@ Before getting into the tutorial we'll have a definition:
 
 Tutorial:
   - Suppose we have A and B are two end points of the tree. We can find A by run DFS from root and find B by DFS from A.
-  - While traversing we store the distances from each nodes root, A, B into three different arrays.
+  - While traversing we store the distances from each nodes root, A, B into three different arrays:
+      + disR: distance from root to all nodes in tree.
+      + disA: distance from A to all nodes in tree.
+      + disB: distance from B to all nodes in tree.
   - Finally just calculate the ans by try to shift the root through all node and from current shifted node to farthest node. Because we had stored all the information earlier we can managed to calculate the answer in O(1).
 
         For example if we shift root to node u:
