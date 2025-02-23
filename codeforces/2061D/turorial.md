@@ -1,4 +1,5 @@
 Problem: https://codeforces.com/contest/2061/problem/D
+
 Tag: *1600, data structure.
 
 Tutorial:
@@ -7,3 +8,6 @@ Tutorial:
 
 ** Special case ** 
   - After separate all numbers in b array we have to check if there any number left in a to output the correct answer.
+
+  - Time complexity: O(mlog(n + m))
+  - Space complexity: O(n + m)
