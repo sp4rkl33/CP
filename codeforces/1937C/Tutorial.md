@@ -1,6 +1,6 @@
 https://codeforces.com/contest/1937/problem/C
-Rating: 1600
-Tags: Interactive
+
+Tags: Interactive, 1600*
 
 Tutorial
 
@@ -11,7 +11,7 @@ Then find all p[k] which is p[k] | p[ki] is largest then store it into a vector.
 Finally find the smallest p[j] in the vector above then the answer will be i and j.
 
 Prove:
-  Example if the bit sequence of p[i] is "110011" so we have to find p[j] that have the bit sequence is "001100" to 
+  - Example if the bit sequence of p[i] is "110011" so we have to find p[j] that have the bit sequence is "001100" to 
   maximize p[i] ^ p[j]
 
   **BUT** there're many bit sequences that p[i] | p[k] = p[i] ^ p[j]. Because we just have to fill the '0' bits so
