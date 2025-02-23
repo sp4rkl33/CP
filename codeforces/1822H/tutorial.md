@@ -19,6 +19,5 @@ Tutorial:
         For example if we shift root to node u:
         ans = max(ans, max(disA[u], disB[u]) * k - disR[u] * c)
 
-Time complexity: O(n)
-
-Space complexity: O(n)
+  - Time complexity: O(n)
+  - Space complexity: O(n)
