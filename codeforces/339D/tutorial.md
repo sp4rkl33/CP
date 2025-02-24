@@ -13,4 +13,7 @@ data structure, tree, 1700*<br>
   > . <br>
   > . <br>
   > we can conclude that if N odd the operation will start from OR and opposite with even it will start with XOR. <br>
+  - For each query we dont have to re-build the whole tree. Just find a path to the position P by squezze the range and update all node on the path we met.
 
+Time complexity: O((n + m) * log(n))<br>
+Space complexity: O(2 ^ n)
