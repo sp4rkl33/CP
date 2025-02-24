@@ -11,9 +11,12 @@ Build a segment tree each node store 3 infomation:
   - Number of correct pairs of bracket (cnt).
 
 We can implement node-merging operation like this:
-  - Let current node called cur(freeL, freeR, cnt). We can calculate current node like this:
-> t = min(left.freeL, right.freeR) <br>
-> cur.freeL = left.freeL - t + right.freeL <br>
-> cur.freeR = left.freeR + right.freeR - t <br>
-> cur.cnt = t + left.cnt + right.cnt <br>
+  - Let current node called cur(freeL, freeR, cnt). We can calculate current node like this: <br>
+  > t = min(left.freeL, right.freeR) <br>
+  > cur.freeL = left.freeL - t + right.freeL <br>
+  > cur.freeR = left.freeR + right.freeR - t <br>
+  > cur.cnt = t + left.cnt + right.cnt <br>
+  
 
+  - Time complexity: O((n + q) * log(n)) <br>
+  - Space complexity: O(n);
