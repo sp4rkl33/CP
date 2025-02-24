@@ -8,5 +8,5 @@ dp, greedy, 1700*
   - To minimize the step we define f[i] is the minimal step to make 
 
 
-Time complexity: O(n)
+Time complexity: O(n)<br>
 Space complexity: O(n) for DP, O(1) for greedy.
