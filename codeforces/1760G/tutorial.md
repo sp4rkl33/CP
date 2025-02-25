@@ -13,5 +13,5 @@ dfs, graph, 1700*
   - Given A = X1 ^ X2 ^ X3 ^ ... ^ Xn = Y1 ^ Y2 ^ Y3 ^ ... ^ Yn and A ^ A = 0
   - So that X1 ^ X2 ^ X3 ^ ... ^ Xn ^ Y1 ^ Y2 ^ Y3 ^ ... ^ Yn = A ^ A = 0
 
-Time complexity: O(n * logn) <br>
+Time complexity: O(n * log(n)) <br>
 Space complexity: O(n)
