@@ -1,16 +1,15 @@
+# Problem
 https://codeforces.com/contest/1937/problem/C
 
-Tags: Interactive, 1600*
+# Tags: 
+Interactive, 1600*
 
-Tutorial
+# Tutorial
+  - Goal: To maximize p[i] ^ p[j] we have to fill all the bit with '1'  
 
-Goal: To maximize p[i] ^ p[j] we have to fill all the bit with '1'  
+  - Firstly we'll find the largest p[i] in the permutation and store it into ki with the query "? i i ki ki". Then find all p[k] which is p[k] | p[ki] is largest then store it into a vector. Finally find the smallest p[j] in the vector above then the answer will be i and j.
 
-Firstly we'll find the largest p[i] in the permutation and store it into ki with the query "? i i ki ki". 
-Then find all p[k] which is p[k] | p[ki] is largest then store it into a vector.
-Finally find the smallest p[j] in the vector above then the answer will be i and j.
-
-Prove:
+# Prove:
   - Example if the bit sequence of p[i] is "110011" so we have to find p[j] that have the bit sequence is "001100" to 
   maximize p[i] ^ p[j]
 
@@ -19,5 +18,5 @@ Prove:
 
   - Then the answer will be ! i k (which k is the minimum p[k] of all the "p[k]s" in the vector).
 
-  - Time complexity: O(n).
-  - Space complexity: O(n).
+Time complexity: O(n).<br>
+Space complexity: O(n).
