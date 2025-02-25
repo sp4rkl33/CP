@@ -9,7 +9,7 @@ https://codeforces.com/contest/2061/problem/D
 Time complexity: O(mlog(n + m))<br>
 Space complexity: O(n + m)
 
-** Special case ** 
+## Special case
   - After separate all numbers in b array we have to check if there any number left in a to output the correct answer.
 
 
