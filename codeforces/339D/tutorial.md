@@ -4,7 +4,7 @@ https://codeforces.com/contest/339/problem/D <br>
 data structure, tree, 1700*<br>
 # Tutorial
   - Build a segment tree each node [l, r] store the result of XOR or OR of 2 child node.
-  - The opeation of merging 2 childs node will alternate from XOR to OR depend on N.
+  - The opeation of merging 2 childs node will alternate from XOR to OR depend on where is node level.
   - We can start from root then traverse though layer and alternate the operator of each layer. <br>
   > the operator of the root will depend on N. <br>
   > N = 1 -> OR <br>
