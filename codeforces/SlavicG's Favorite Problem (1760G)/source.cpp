@@ -54,18 +54,18 @@ string solve(){
     }
     
     map<int, bool> mp;
-
+    //find all paths start from B	
     auto dfsb = [&](auto self, int u, int w) -> void{
         vb[u] = 1;
-        if (u != b) mp[w] = 1;
+        if (u != b) mp[w] = 1; //store every possible path to map
         for (auto it:g[u]) if (!vb[it.ff]) self(self, it.ff, it.ss ^ w);
     };
 
-    bool f = 0;
-
+    bool f = 0; //flag
+    //find all path from A
     auto dfsa = [&](auto self, int u, int w) -> void{
         va[u] = 1;
-        if (mp[w] || f){
+        if (mp[w] || f){ //if path was founded set flag then return null the functon;
             f = 1;
             return;
         }
