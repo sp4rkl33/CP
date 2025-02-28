@@ -15,7 +15,7 @@ Before getting into the tutorial we'll have a definition:
       + disR: distance from root to all nodes in tree.
       + disA: distance from A to all nodes in tree.
       + disB: distance from B to all nodes in tree.
-  - Finally just calculate the ans by try to shift the root through all node and from current shifted node to farthest node. Because we had stored all the information earlier we can managed to calculate the answer in O(1).
+  - Finally just calculate the ans by try to shift the root through all node and from current shifted node to farthest node. Because we had stored all the information earlier so that we can managed to calculate the answer in O(1).
 
         For example if we shift root to node u:
         ans = max(ans, max(disA[u], disB[u]) * k - disR[u] * c)
