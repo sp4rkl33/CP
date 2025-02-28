@@ -50,8 +50,12 @@ void solve(){
     for (int i = 0; i < n; i++){
         int it;
         cin >> it;
+
+	// maintain the GCD of the whole array.
         if (c == -1) c = it;
         else c = __gcd(c, it);
+
+	//let's counter do the work.
         if (it % 2 == 1) cnt++;
         else {
             ans += (cnt / 2) + (cnt % 2) * 2;
