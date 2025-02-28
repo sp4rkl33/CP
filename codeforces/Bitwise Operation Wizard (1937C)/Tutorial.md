@@ -2,7 +2,7 @@
 https://codeforces.com/contest/1937/problem/C
 
 # Tags: 
-Interactive, 1600*
+Interactive, Math, Bitmasks, 1600*
 
 # Tutorial
   - Goal: To maximize p[i] ^ p[j] we have to fill all the bit with '1'  
