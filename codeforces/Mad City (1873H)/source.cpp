@@ -55,18 +55,19 @@ string solve(){
     vector<bool> v(n + 1);
     int p = -1;
 
-    auto dfs = [&](auto self, int u, int pst) -> void{
+    auto dfs = [&](auto self, int u, int pst) -> void{ //find the closest cycle start from V
         v[u] = 1;
         for (int it:g[u]){
             if (p != -1) return;
             if (!v[it]) self(self, it, u);
-            else if (it != pst) {
+            else if (it != pst) { //if found store in p
                 p = it;
                 return;
             }
         }
     };
 
+    //using BFS to find the shortest path from each player.
     auto bfs = [&](auto self, int u) -> int{
         queue<int> q;
         vector<int> d(n + 1, 1 << 30);
