@@ -48,13 +48,16 @@ void solve(){
     mp[t].push_back(1);
     int cnt = 1, ansn = t, ansl = 1, ansr = 1;
 
+    //store index of every number into a map
     for (int i = 2; i <= n; i++){
         int x; cin >> x;
         mp[x].push_back(i);
     }
 
+    //iterate through the map
     for (auto it:mp){
         int tcnt = 1, tl = it.ss[0], tr = tl;
+	//iterate through every index of a number.
         for (int i = 1; i < (int)it.ss.size(); i++){
             tcnt += 2 - it.ss[i] + it.ss[i - 1]; 
             tr = it.ss[i];
