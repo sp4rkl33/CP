@@ -46,6 +46,8 @@ void _print(T t, V... v) {__print(t); if (sizeof...(v)) cerr << ", "; _print(v..
 string solve(){
    int n, m; cin >> n >> m;
    map<int, int> mp;
+
+   //store all element of A in a map
    for (int i = 0; i < n; i++) {
        int x; cin >> x;
        mp[x]++;
@@ -53,7 +55,9 @@ string solve(){
 
     vector<int> b(m); for (auto &it:b) cin >> it;
 
+   //iterate through every nums in B
    for (int x:b){
+       //using heap to maintain the algorithm in time limit
        priority_queue<int, vector<int>, greater<int>> pq;
        pq.push(x);
        while (!pq.empty()){
