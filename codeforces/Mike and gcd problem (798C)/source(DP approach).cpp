@@ -61,10 +61,8 @@ void solve(){
                 if (f[i - 1].ss == 1){
                     f[i].ff = f[i - 1].ff - 1;
                     f[i].ss = 2;
-                    f[i].ss = 2;
                 } else if (f[i - 1].ss == 0){
                     f[i].ff = f[i - 1].ff + 1;
-                    f[i].ss = 2;
                     f[i].ss = 2;
                 } else {
                     f[i].ff = f[i - 1].ff + 2;
