@@ -1,1 +1,1 @@
-Trying to get better everyday <3
+Trying to get better every day <3
