@@ -1,1 +1,1 @@
-Love this <3
+Trying to get better everyday <3
