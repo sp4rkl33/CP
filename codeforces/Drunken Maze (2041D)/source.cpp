@@ -75,8 +75,10 @@ int solve(){
         }
     }
 
+    //distance array d[x][y][dir] mean shortest distance from S to position 
     vector<vector<vector<int>>> d(n + 1, vector<vector<int>>(m + 1, vector<int>(4, maxN)));
 
+    //Modify dijkstra algorithm.	
     priority_queue<node, vector<node>, greater<>> pq;
     pq.emplace(sx, sy, 0, -1, 0);
     while (!pq.empty()){
