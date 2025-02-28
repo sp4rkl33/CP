@@ -54,7 +54,8 @@ void solve(){
     string s; cin >> s;
     int n, q; cin >> q; n = s.length();
     vector<elm> v(4000007);
-    
+
+    //merging operation
     auto merge = [&](elm l, elm r) -> elm{ // calculate current node by merging 2 left and right node
         int cur = min(l.freeL, r.freeR);
         elm ans;
@@ -63,7 +64,8 @@ void solve(){
         ans.cnt = cur + l.cnt + r.cnt;
         return ans;
     };
-
+    
+    //segment tree build function
     auto build = [&](auto self, int idx, int l, int r) -> void{ //function to build segment tree
         if (l < r){
             int mid = (l + r) / 2;
@@ -76,6 +78,7 @@ void solve(){
         }
     };
 
+    //traversing based on query.
     auto sol = [&](auto self, int l, int r, int L, int R, int idx) -> elm{
         elm p(0, 0, 0);
         if (r < L || R < l) return p; //if range outside the query return default 0 elm
