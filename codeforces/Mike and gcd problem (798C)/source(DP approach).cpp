@@ -52,19 +52,19 @@ void solve(){
 
     for (int i = 1; i < n; i++){
         z = __gcd(z, a[i]);
-        if (a[i] % 2 == 1){
-            if (a[i - 1] % 2 == 0) {
+        if (a[i] % 2 == 1){ //if current number is an odd we proceed the calculation
+            if (a[i - 1] % 2 == 0) { //if previous number is an even
                 f[i].ff = f[i - 1].ff + 2;
                 f[i].ss = 1;
             }
             else {
-                if (f[i - 1].ss == 1){
+                if (f[i - 1].ss == 1){ //if previous number was merged with an even
                     f[i].ff = f[i - 1].ff - 1;
                     f[i].ss = 2;
-                } else if (f[i - 1].ss == 0){
+                } else if (f[i - 1].ss == 0){ //if previous number was a free odd number
                     f[i].ff = f[i - 1].ff + 1;
                     f[i].ss = 2;
-                } else {
+                } else { //if previous number was merged with an even 
                     f[i].ff = f[i - 1].ff + 2;
                     f[i].ss = 1;
                 }
