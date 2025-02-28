@@ -53,16 +53,21 @@ char ask(int a, int b, int c, int d){
 
 void solve(){
     int n; cin >> n;
+
+    //if n == 2 we only have to number so just output the answer.
     if (n == 2) {
         cout << "! 0 1" << '\n';
         return;
     }
+
+    //finding the position of the largest number.
     int ki = 0; 
     for (int i = 1; i < n; i++){
         char resp = ask(ki, ki, i, i);
         if (resp == '<') ki = i;
     }
-    
+
+    //find every position that OR with a[ki] is maximize.
     vector<int> vt;
     int mx = 0;
     for (int i = 0; i < n; i++){
@@ -73,7 +78,8 @@ void solve(){
            mx = i;
        } else if (resp == '=') vt.emplace_back(i);
     }
-    
+
+    //find the minimum number among all the index in array vt.
     int kj = vt[0];
     for (int i = 1; i < (int)vt.size(); i++){
         char resp = ask(kj, kj, vt[i], vt[i]);
