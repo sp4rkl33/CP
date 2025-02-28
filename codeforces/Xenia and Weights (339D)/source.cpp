@@ -47,7 +47,7 @@ void solve(){
     int n, m, e; cin >> e >> m; n = (1 << (e));
     vector<int> v(4 * n + 7), a(n);
     for (auto &it:a) cin >> it;
-
+    //typical segment tree build function
     auto build = [&](auto self, int l, int r, int idx, bool x) -> void{
         if (l < r){
             int mid = (l + r) / 2;
@@ -58,8 +58,8 @@ void solve(){
     };
 
     auto sol = [&](auto self, int l, int r, int p, int idx, bool x) -> void{    
-       if (p > r || l > p) return;
-       if (l == p && r == p) {
+       if (p > r || l > p) return; // checking if the position still inside the query we asking for.
+       if (l == p && r == p) { //update the leaf
             v[idx] = a[p];
             return;
        }
