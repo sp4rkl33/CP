@@ -17,3 +17,6 @@ bitmasks, dp, 1700*
           f[i][a[i]] + f[i][a[i]] + 1
     ```
   - At the end just sum every cases that have k set bits in binary presentation of x (0 <= x <= 63)
+
+Time complexity: O(64 * N)<br>
+Space complexity: O(64 * N)
