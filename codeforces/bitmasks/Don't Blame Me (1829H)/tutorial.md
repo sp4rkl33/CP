@@ -18,5 +18,5 @@ bitmasks, dp, 1700*
     ```
   - At the end just sum every cases that have k set bits in binary presentation of x (0 <= x <= 63)
 
-Time complexity: O(64 * N)<br>
-Space complexity: O(64 * N)
+Time complexity: O(63 * N)<br>
+Space complexity: O(63 * N)
