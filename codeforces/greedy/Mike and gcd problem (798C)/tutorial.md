@@ -23,5 +23,5 @@ dp, greedy, 1700*
 
 **Special case: if gcd(A) already greater than 1 we just print 0 to the step output**  
 
-Time complexity: O(n * log(max(a[i]))<br>
+Time complexity: O(n * log(2 * max(a[i]))<br>
 Space complexity: O(n) for DP, O(1) for greedy.
