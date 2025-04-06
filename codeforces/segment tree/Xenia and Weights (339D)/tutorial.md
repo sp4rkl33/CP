@@ -16,4 +16,4 @@ data structure, tree, 1700*<br>
   - For each query we dont have to re-build the whole tree. Just find a path to the position P by squezze the range and update all node on the path we met.
 
 Time complexity: O(((2 ^ n) + m) * n)<br>
-Space complexity: O(2 ^ n)
+Space complexity: O(n)
