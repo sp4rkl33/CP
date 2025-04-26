@@ -5,10 +5,10 @@ https://codeforces.com/contest/339/problem/D
 data structure, 2200*
 
 # Tutorial:
-Build a segment tree each node store 3 things:
-    + The number of open bracket that haven't been used (free_open)
-    + The number of close bracket that haven't been used (free_close)
-    + The number of correct of pair brackets.
+Build a segment tree each node store 3 things:<br>
+    + The number of open bracket that haven't been used (free_open)<br>
+    + The number of close bracket that haven't been used (free_close)<br>
+    + The number of correct of pair brackets.<br>
 
     Calculate each elements of current node like this (set 0 for all variables):
     Step 1:
