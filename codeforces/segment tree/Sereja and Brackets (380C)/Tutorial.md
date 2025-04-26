@@ -2,7 +2,7 @@
 https://codeforces.com/contest/339/problem/D
 
 # Tag:
-data structure, 2000*
+data structure, 2200*
 
 # Tutorial:
 Build a normal min segment tree with lazy tag in the node itself.
