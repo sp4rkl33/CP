@@ -12,15 +12,15 @@ Build a segment tree each node store 3 things:
     
 Calculate each elements of current node like this (set 0 for all variables):
 '''
-    Step 1:
+Step 1:
     correct_cur = min(left_free_open, right_free_close) + correct_left + correct_right
 
-    Step 2:
+Step 2:
     If left_free_open > right_free_close:
     cur_free_open = left_free_open - right_free_close
     Else do it otherwise.
 
-    *Step 3:
+Step 3:
         + cur_free_open += right_free_open
         + cur_free_close += left_free_close
 '''
