@@ -1,10 +1,10 @@
-#Problem:
+# Problem:
 https://atcoder.jp/contests/practice2/tasks/practice2_k
 
-#Tag:
+# Tag:
 Data structure, Tree
 
-#Tutorial:
+# Tutorial:
 Using lazy segment tree to store segment's value and tag
   - let's S be the sum of some segment [l, r) <br>
         ```
