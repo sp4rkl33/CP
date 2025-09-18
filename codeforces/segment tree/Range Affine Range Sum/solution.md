@@ -12,13 +12,8 @@ Using lazy segment tree to store segment's value and tag
         ```
   - Then apply the first pair {b, c} into that segment and call the new sum is S2. <br>
         ```
-           S2 = b * a[l] + c + b * a[l + 1] + c + ... + b * a[r - 1] + c
-        ```<br>
-        ```
-              = b * (a[l] + a[l + 1] + ... + a[r - 1]) + (r - l) * c <br>
-        ```<br>
-        ```
-              = b * S + c * (r - l) (**) <br>
+            S2 = b * a[l] + c + b * a[l + 1] + c + ... + b * a[r - 1] + c
+               = b asd
         ```
   - Let's {b, c} become the coefficient of {S, (r - l)} (**).
   - Again apply pair {b1, c1} into the same segment and call the new sum is S3
