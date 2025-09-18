@@ -10,7 +10,7 @@ Using lazy segment tree to store segment's value and tag
         ```
             S = a[l] + a[l + 1] + ... + a[r - 1] 
         ```
-  - Then apply the first pair {b, c} into that segment and call the new sum is S2
+  - Then apply the first pair {b, c} into that segment and call the new sum is S2. <br>
         ```
            S2 = b * a[l] + c + b * a[l + 1] + c + ... + b * a[r - 1] + c
         ```
